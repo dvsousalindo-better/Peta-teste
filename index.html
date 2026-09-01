@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Peta Importados</title>
+    <link rel="stylesheet" href="style.css">
+    <script 
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+    </script>
+</head>
+<body>
+        <!-- A navbar -->
+        <nav class="navbar navbar-expand-lg navbar-peta">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Peta Importados</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Peta Importados</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="index.html">Início</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="contato.html">Contato</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="sobre.html">Sobre nós</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link active" href="produtos.html">Produtos</a>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Outros
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="localizacao.html">Localização</a></li>
+                                    <li><a class="dropdown-item" href="termos.html">Termos de serviço</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <form class="d-flex mt-3" role="search" id="formPesquisa">
+                            <input
+                                class="form-control me-2"
+                                type="search"
+                                id="campoPesquisa"
+                                placeholder="Procure por produtos">
+                            <button class="btn btn-outline-success btn-peta" type="submit">Pesquisar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- O carousel -->
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/img1.webp" class="d-block w-100" alt="Peta Importados">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Tudo o que você procura em um só lugar!</h5>
+                        <p>Encontre variedade, praticidade e novidades na Peta Importados.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="/img2.jpg" class="d-block w-100" alt="Produtos da Peta Importados">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Novidades para todos os momentos!</h5>
+                        <p>Produtos para sua casa, estilo, lazer e muito mais.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="/img3.jpg" class="d-block w-100" alt="Peta Importados">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Variedade que combina com você!</h5>
+                        <p>Venha conhecer nossas opções e descubra seus próximos favoritos.</p>
+                    </div>
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <!-- As categorias -->
+        <div class="container my-5">
+
+            <h2 class="text-center mb-4">Nossas categorias</h2>
+
+            <div class="row g-4">
+
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="card h-100">
+                        <img src="img7.png" class="card-img-top" alt="Produtos">
+                        <div class="card-body">
+                            <h5 class="card-title">Utensílios</h5>
+                            <p class="card-text">
+                                Confira nossas opções de utensílios para sua casa.
+                            </p>
+                            <a href="produtos.html?categoria=ute" class="btn btn-primary">
+                                Ver produtos
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="card h-100">
+                        <img src="img8.png" class="card-img-top" alt="Produtos">
+                        <div class="card-body">
+                            <h5 class="card-title">Materiais Escolares</h5>
+                            <p class="card-text">
+                                Produtos para estudantes de todas as idades.
+                            </p>
+                            <a href="produtos.html?categoria=mate" class="btn btn-primary">
+                                Ver produtos
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="card h-100">
+                        <img src="img9.png" class="card-img-top" alt="Produtos">
+                        <div class="card-body">
+                            <h5 class="card-title">Brinquedos</h5>
+                            <p class="card-text">
+                                Diversão para diferentes idades.
+                            </p>
+                            <a href="produtos.html?categoria=brinq" class="btn btn-primary">
+                                Ver produtos
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- O footer-->
+            <footer class="bg-peta text-white py-4 mt-5">
+
+                <div class="container">
+
+                    <div class="row">
+
+                        <!-- Algumas Informações -->
+                        <div class="col-12 col-md-4 mb-3">
+                            <h5>Peta Importados</h5>
+                            <p>
+                                Variedade, praticidade e novidades para você.
+                            </p>
+                        </div>
+
+                        <!-- Os links -->
+                        <div class="col-12 col-md-4 mb-3">
+                            <h5>Links rápidos</h5>
+
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="#" class="text-white text-decoration-none">
+                                        Início
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#categorias" class="text-white text-decoration-none">
+                                        Categorias
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#sobre" class="text-white text-decoration-none">
+                                        Sobre nós
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="contato.html" class="text-white text-decoration-none">
+                                        Contato
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- O contato mais o local -->
+                        <div class="col-12 col-md-4 mb-3">
+                            <h5>Contato</h5>
+
+                            <p class="mb-1">Floriano - PI</p>
+                            <p class="mb-1">(89) 99919-8185</p>
+                        </div>
+
+                    </div>
+
+                    <hr>
+
+                    <div class="text-center">
+                        <p class="mb-0">
+                            © 2026 Peta Importados. Todos os direitos reservados.
+                        </p>
+                    </div>
+
+                </div>
+
+            </footer>
+
+        </div>
+
+</body>
+</html>
