@@ -3,34 +3,174 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Peta Importados</title>
     <link rel="stylesheet" href="style.css">
+    <script 
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+    </script>
 </head>
 <body>
-    
-<h1>O que é Git?</h1>
-<p>Git pronuncia-se [git] (ou /ɡɪt/ em inglês britânico[2][3]) é um sistema de controle de versões distribuído, usado principalmente no desenvolvimento de software, mas pode ser usado para registrar o histórico de edições de qualquer tipo de arquivo (Exemplo: alguns livros digitais são disponibilizados no GitHub e escrito aos poucos publicamente).</p>
 
-<h1>O que é GitHub?</h1>
-<p>O GitHub é uma plataforma de hospedagem de código-fonte e arquivos com controle de versão usando o Git. Ele permite que programadores, utilitários ou qualquer usuário cadastrado na plataforma contribuam em projetos privados e/ou código aberto de qualquer lugar do mundo.</p>
-<h1>Qual a diferença entre Git e GitHub?</h1>
-<div class="img1"><img src="img1(1).png" alt="Diferença entre Git e GitHub"></div>
-<h1>O que é um repositório?</h1>
-<p>Um repositório, ou simplesmente repo, é um armazenamento digital centralizado que os desenvolvedores usam para fazer e gerenciar alterações no código-fonte de uma aplicação.</p>
-<h1>O que é um commit?</h1>
-<p>commit refere-se ao processo de tornar permanente um conjunto de alterações, ou seja, de efetivar as alterações. Um uso comum é a conclusão de uma transação. Um commit é o ato de enviar e guardar, ou seja, enviar dados ou códigos para armazenamento em um banco de dados ou em um sistema de controle de versão.</p>
-<h1>O que é um clone (git clone)?</h1>
-<p>O git clone é um utilitário de linha de comando que é usado para selecionar um repositório existente e criar um clone ou cópia do repositório de destino.</p>
-<h1>Quais as vantagens de utilizar controle de versões em projetos de software?</h1>
-<p>Os sistemas de controle de versão são ferramentas de software que ajudam as equipes de software a gerenciar as alterações ao código-fonte ao longo do tempo. Como os ambientes de desenvolvimento aceleraram, os sistemas de controle de versão ajudam as equipes de software a trabalhar de forma mais rápida e inteligente. Eles são ainda mais úteis para as equipes de DevOps, pois as auxiliam a reduzir o tempo de desenvolvimento e aumentar as implementações bem-sucedidas.</p>
-<h1>Pesquise e comente sobre git add e git ignore.</h1>
-<p>O comando git add adiciona uma alteração no diretório ativo à área de staging. Ele diz ao Git que você quer incluir atualizações a um arquivo específico no próximo commit. No entanto, git add não tem efeito real e significativo no repositório: as alterações não são gravadas mesmo até você executar git commit.</p>
-<h1>O Git vê cada arquivo em sua cópia de trabalho em um de três estados:</h1>
-<ol>
-    <li>rastreado: um arquivo que já foi preparado ou confirmado;</li>
-    <li>não rastreado: um arquivo que não foi preparado nem confirmado; ou</li>
-    <li>ignorado: um arquivo que o Git foi forçado a ignorar.</li>
-</ol>
-<p>Os arquivos ignorados costumam ser artefatos de desenvolvimento e arquivos gerados por máquina que podem ser derivados da fonte do seu repositório ou que não devem passar por commit.</p>
+    <!-- A navbar -->
+        <nav class="navbar navbar-expand-lg navbar-peta">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Peta Importados</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Peta Importados</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="index.html">Início</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="contato.html">Contato</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="sobre.html">Sobre nós</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="produtos.html">Produtos</a>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Outros
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="localizacao.html">Localização</a></li>
+                                    <li><a class="dropdown-item active" href="index2.html">Sobre o GitHub&Git</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <form class="d-flex mt-3" role="search" id="formPesquisa">
+                            <input
+                                class="form-control me-2"
+                                type="search"
+                                id="campoPesquisa"
+                                placeholder="Procure por produtos">
+                            <button class="btn btn-outline-success btn-peta" type="submit">Pesquisar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+    
+    <h1>O que é Git?</h1>
+    <p>Git pronuncia-se [git] (ou /ɡɪt/ em inglês britânico[2][3]) é um sistema de controle de versões distribuído, usado principalmente no desenvolvimento de software, mas pode ser usado para registrar o histórico de edições de qualquer tipo de arquivo (Exemplo: alguns livros digitais são disponibilizados no GitHub e escrito aos poucos publicamente).</p>
+
+    <h1>O que é GitHub?</h1>
+    <p>O GitHub é uma plataforma de hospedagem de código-fonte e arquivos com controle de versão usando o Git. Ele permite que programadores, utilitários ou qualquer usuário cadastrado na plataforma contribuam em projetos privados e/ou código aberto de qualquer lugar do mundo.</p>
+    <h1>Qual a diferença entre Git e GitHub?</h1>
+    <div class="img1"><img src="img1(1).png" alt="Diferença entre Git e GitHub"></div>
+    <h1>O que é um repositório?</h1>
+    <p>Um repositório, ou simplesmente repo, é um armazenamento digital centralizado que os desenvolvedores usam para fazer e gerenciar alterações no código-fonte de uma aplicação.</p>
+    <h1>O que é um commit?</h1>
+    <p>commit refere-se ao processo de tornar permanente um conjunto de alterações, ou seja, de efetivar as alterações. Um uso comum é a conclusão de uma transação. Um commit é o ato de enviar e guardar, ou seja, enviar dados ou códigos para armazenamento em um banco de dados ou em um sistema de controle de versão.</p>
+    <h1>O que é um clone (git clone)?</h1>
+    <p>O git clone é um utilitário de linha de comando que é usado para selecionar um repositório existente e criar um clone ou cópia do repositório de destino.</p>
+    <h1>Quais as vantagens de utilizar controle de versões em projetos de software?</h1>
+    <p>Os sistemas de controle de versão são ferramentas de software que ajudam as equipes de software a gerenciar as alterações ao código-fonte ao longo do tempo. Como os ambientes de desenvolvimento aceleraram, os sistemas de controle de versão ajudam as equipes de software a trabalhar de forma mais rápida e inteligente. Eles são ainda mais úteis para as equipes de DevOps, pois as auxiliam a reduzir o tempo de desenvolvimento e aumentar as implementações bem-sucedidas.</p>
+    <h1>Pesquise e comente sobre git add e git ignore.</h1>
+    <p>O comando git add adiciona uma alteração no diretório ativo à área de staging. Ele diz ao Git que você quer incluir atualizações a um arquivo específico no próximo commit. No entanto, git add não tem efeito real e significativo no repositório: as alterações não são gravadas mesmo até você executar git commit.</p>
+    <h1>O Git vê cada arquivo em sua cópia de trabalho em um de três estados:</h1>
+    <ol>
+        <li>rastreado: um arquivo que já foi preparado ou confirmado;</li>
+        <li>não rastreado: um arquivo que não foi preparado nem confirmado; ou</li>
+        <li>ignorado: um arquivo que o Git foi forçado a ignorar.</li>
+    </ol>
+    <p>Os arquivos ignorados costumam ser artefatos de desenvolvimento e arquivos gerados por máquina que podem ser derivados da fonte do seu repositório ou que não devem passar por commit.</p>
+
+        <div class="container my-5">
+            <!-- O footer-->
+            <footer class="bg-peta text-white py-4 mt-5">
+
+                <div class="container">
+
+                    <div class="row">
+
+                        <!-- Algumas Informações -->
+                        <div class="col-12 col-md-4 mb-3">
+                            <h5>Peta Importados</h5>
+                            <p>
+                                Variedade, praticidade e novidades para você.
+                            </p>
+                        </div>
+
+                        <!-- Os links -->
+                        <div class="col-12 col-md-4 mb-3">
+                            <h5>Links rápidos</h5>
+
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="#" class="text-white text-decoration-none">
+                                        Início
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#categorias" class="text-white text-decoration-none">
+                                        Categorias
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#sobre" class="text-white text-decoration-none">
+                                        Sobre nós
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="contato.html" class="text-white text-decoration-none">
+                                        Contato
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- O contato mais o local -->
+                        <div class="col-12 col-md-4 mb-3">
+                            <h5>Contato</h5>
+
+                            <p class="mb-1">Floriano - PI</p>
+                            <p class="mb-1">(89) 99919-8185</p>
+                        </div>
+
+                    </div>
+
+                    <hr>
+
+                    <div class="text-center">
+                        <p class="mb-0">
+                            © 2026 Peta Importados. Todos os direitos reservados.
+                        </p>
+                    </div>
+
+                </div>
+
+            </footer>
+
+        </div>
+
+        <script src="script.js"></script>
+        <script 
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+        </script>
+
 </body>
 </html>
